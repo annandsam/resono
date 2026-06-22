@@ -22,7 +22,7 @@
   }
   .site-wrap {
     display: flex; flex-direction: column;
-    height: calc(100vh - 24px);
+    height: calc(100vh - 24px); height: calc(100dvh - 24px);
     background: #2c2c2a;
     border-radius: 18px; border: var(--border); overflow: hidden; isolation: isolate;
     -webkit-mask-image: -webkit-radial-gradient(white, white);
@@ -107,7 +107,8 @@
 
   /* ── SCROLL AREA (white content) ── */
   .scroll-area {
-    flex: 1; min-height: 0; overflow-y: auto; -webkit-overflow-scrolling: touch;
+    flex: 1; min-height: 0; overflow-y: auto; overflow-x: hidden; -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: none; touch-action: pan-y;
     background: #ffffff;
   }
 
@@ -323,7 +324,7 @@
 .wf-expand-btn:hover{background:rgba(237,233,228,.07);color:rgba(237,233,228,.85);}
 .wf-wrap{height:380px;position:relative;overflow:hidden;}
 .wf-frame{width:100%;height:100%;border:none;display:block;}
-.wf-wrap.wf-fullscreen{position:fixed;inset:0;z-index:9998;height:100vh!important;overflow:visible;}
+.wf-wrap.wf-fullscreen{position:fixed;inset:0;z-index:9998;height:100dvh!important;overflow:visible;}
 .wf-close-btn{position:fixed;top:16px;right:16px;z-index:9999;font-family:var(--mono,monospace);font-size:10px;letter-spacing:.10em;color:rgba(237,233,228,.65);background:rgba(0,0,0,.8);border:1px solid rgba(237,233,228,.18);padding:7px 16px;cursor:pointer;text-transform:uppercase;display:none;}
 </style>
 <section class="waterfall-section">
