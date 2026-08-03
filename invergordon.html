@@ -667,17 +667,17 @@
 <div class="site-wrap">
 
 <nav>
-  <a href="https://annandsam.github.io/home/" class="nav-logo">Sam Annand</a>
+  <a href="/" class="nav-logo">Sam Annand</a>
   <button class="nav-hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
   <ul class="nav-links">
 
-    <li class="nav-item"><a href="https://annandsam.github.io/home/">Home</a></li>
+    <li class="nav-item"><a href="/">Home</a></li>
 
     <li class="nav-item">
       <a href="#">Projects</a>
       <div class="dropdown-wrap"><div class="dropdown">
-        <a href="https://annandsam.github.io/resono/">Resono</a>
-        <a href="https://annandsam.github.io/macro/">Macro</a>
+        <a href="/resono/">Resono</a>
+        <a href="/macro/">Macro</a>
         <div class="dd-divider"></div>
         <div class="flyout-item">
           <a href="#" class="flyout-trigger">Other <span class="flyout-arrow">›</span></a>
@@ -696,9 +696,9 @@
     </li>
 
     <li class="nav-item"><a href="https://samannand.bandcamp.com" target="_blank">Bandcamp</a></li>
-    <li class="nav-item"><a href="https://annandsam.github.io/home/mastering.html">Mastering</a></li>
-    <li class="nav-item"><a href="https://annandsam.github.io/home/about.html">About</a></li>
-    <li class="nav-item"><a href="https://annandsam.github.io/home/contact.html">Contact</a></li>
+    <li class="nav-item"><a href="/mastering.html">Mastering</a></li>
+    <li class="nav-item"><a href="/about.html">About</a></li>
+    <li class="nav-item"><a href="/contact.html">Contact</a></li>
 
   </ul>
 </nav>
@@ -712,7 +712,7 @@
   </div>
   <div class="hero-content">
     <div class="hero-left">
-      <a href="https://annandsam.github.io/resono/" class="project-back">← Resono</a>
+      <a href="/resono/" class="project-back">← Resono</a>
       <h1 class="silo-title">Inchindown Oil Tanks</h1>
       <span class="silo-location">Invergordon, Ross-shire · Scotland</span>
     </div>
@@ -889,7 +889,7 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')collapseWF()
     
     <script>
     (function () {
-      var BASE = 'https://annandsam.github.io/resono/audio/invergordon/';
+      var BASE = '/resono/audio/invergordon/';
       var TRACKS = [
         { n:'01', name:'Inchindown', file:'https://archive.org/download/inchindown/Inchindown%20Mstr.mp3' },
       ];
@@ -1026,7 +1026,7 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')collapseWF()
     <span class="lnl-dir">&#8592; Previous Location</span>
     <span class="lnl-name">Wormit Reservoir</span>
   </a>
-  <a href="https://annandsam.github.io/macro/" class="loc-nav-link next">
+  <a href="/macro/" class="loc-nav-link next">
     <span class="lnl-dir">&#8594;</span>
     <span class="lnl-name">Macro</span>
   </a>
@@ -1051,7 +1051,7 @@ function getCtx() {
 
 async function loadIR() {
   try {
-    const res = await fetch('https://annandsam.github.io/resono/impulses/inchindownir.wav');
+    const res = await fetch('/resono/impulses/inchindownir.wav');
     if (!res.ok) throw new Error('fetch failed');
     const ab  = await res.arrayBuffer();
     const ctx = getCtx();
